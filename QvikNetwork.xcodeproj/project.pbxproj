@@ -30,6 +30,7 @@
 		49C6A9A11D6EDE1300F0525E /* animated.gif in Resources */ = {isa = PBXBuildFile; fileRef = 49C6A99E1D6EDE1300F0525E /* animated.gif */; };
 		49C6A9A21D6EDE1300F0525E /* working.gif in Resources */ = {isa = PBXBuildFile; fileRef = 49C6A99F1D6EDE1300F0525E /* working.gif */; };
 		5B39879705C49AA2C65D7201 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BA235D0FD554244194F2361 /* Pods.framework */; };
+		D69BF4699DE96CE611245D40 /* Pods_QvikNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBA2139A22A02885F03BF8CA /* Pods_QvikNetwork.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,8 +68,11 @@
 		49C6A99D1D6EDE1300F0525E /* randombytes_broken.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = randombytes_broken.gif; path = TestData/randombytes_broken.gif; sourceTree = "<group>"; };
 		49C6A99E1D6EDE1300F0525E /* animated.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = animated.gif; path = TestData/animated.gif; sourceTree = "<group>"; };
 		49C6A99F1D6EDE1300F0525E /* working.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = working.gif; path = TestData/working.gif; sourceTree = "<group>"; };
+		757BF86725CD6B2BA19DCD1B /* Pods-QvikNetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QvikNetwork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QvikNetwork/Pods-QvikNetwork.debug.xcconfig"; sourceTree = "<group>"; };
 		7BA235D0FD554244194F2361 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BE5742F579D0C7590BD3D14 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		EBA2139A22A02885F03BF8CA /* Pods_QvikNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QvikNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBF19DAE3B216DD83C2C74E3 /* Pods-QvikNetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QvikNetwork.release.xcconfig"; path = "Pods/Target Support Files/Pods-QvikNetwork/Pods-QvikNetwork.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B39879705C49AA2C65D7201 /* Pods.framework in Frameworks */,
+				D69BF4699DE96CE611245D40 /* Pods_QvikNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				7BA235D0FD554244194F2361 /* Pods.framework */,
+				EBA2139A22A02885F03BF8CA /* Pods_QvikNetwork.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -231,6 +237,8 @@
 			children = (
 				0DB2951FFB5B46B6CF96C77F /* Pods.debug.xcconfig */,
 				8BE5742F579D0C7590BD3D14 /* Pods.release.xcconfig */,
+				757BF86725CD6B2BA19DCD1B /* Pods-QvikNetwork.debug.xcconfig */,
+				EBF19DAE3B216DD83C2C74E3 /* Pods-QvikNetwork.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -252,13 +260,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49B21C171BB7CD9D00C25FDE /* Build configuration list for PBXNativeTarget "QvikNetwork" */;
 			buildPhases = (
-				0F9DFD7E214DCB05164A5F13 /* Check Pods Manifest.lock */,
+				0F9DFD7E214DCB05164A5F13 /* [CP] Check Pods Manifest.lock */,
 				49B21BFE1BB7CD9D00C25FDE /* Sources */,
 				490CB4A61CCA69A200057994 /* Swiftlint */,
 				49B21BFF1BB7CD9D00C25FDE /* Frameworks */,
 				49B21C001BB7CD9D00C25FDE /* Headers */,
 				49B21C011BB7CD9D00C25FDE /* Resources */,
-				3EE53D4C99822267CFE9B6F9 /* Copy Pods Resources */,
+				3EE53D4C99822267CFE9B6F9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -345,14 +353,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0F9DFD7E214DCB05164A5F13 /* Check Pods Manifest.lock */ = {
+		0F9DFD7E214DCB05164A5F13 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,19 +368,19 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		3EE53D4C99822267CFE9B6F9 /* Copy Pods Resources */ = {
+		3EE53D4C99822267CFE9B6F9 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QvikNetwork/Pods-QvikNetwork-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		490CB4A61CCA69A200057994 /* Swiftlint */ = {
@@ -525,7 +533,7 @@
 		};
 		49B21C181BB7CD9D00C25FDE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0DB2951FFB5B46B6CF96C77F /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 757BF86725CD6B2BA19DCD1B /* Pods-QvikNetwork.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
@@ -545,7 +553,7 @@
 		};
 		49B21C191BB7CD9D00C25FDE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8BE5742F579D0C7590BD3D14 /* Pods.release.xcconfig */;
+			baseConfigurationReference = EBF19DAE3B216DD83C2C74E3 /* Pods-QvikNetwork.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
